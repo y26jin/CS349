@@ -1,0 +1,39 @@
+Basic X windows programming
+
+X windows:
+1. X server 
+- provide services for client application to render, draw, mesh, etc...
+
+2. X lib
+- client
+
+some resources store on x server
+x server batches messages (XFlush command push messages out)
+
+Xlib
+so that ppl can avoid reinventing wheels
+no common look and feel when implementing with xlib
+no GUI toolkits --> flexible
+
+client-init events: user inits ??? e.g. mouse click,move, keyboard events...
+
+':0' -- open display 
+
+stroke model: device specific?
+region model: 
+
+when u start to draw, routines use same sets of patterns again and again
+-->graphics context
+
+Xlib: GC structure
+      stored on the x server
+      global to the application(need policy)
+
+What happens if the window minimize?
+-everything disappaers
+-soln: painter's algorithm
+-note: repaint when necessary(e.g. before client-init)
+       minimize the time of XFlush
+
+Events Method
+-ambiguity(continue from slide 27)

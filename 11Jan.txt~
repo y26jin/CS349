@@ -1,0 +1,22 @@
+Basic X windows programming
+
+X windows:
+1. X server 
+- provide services for client application to render, draw, mesh, etc...
+
+2. X lib
+- client
+
+some resources store on x server
+x server batches messages (XFlush command push messages out)
+
+Xlib
+so that ppl can avoid reinventing wheels
+no common look and feel when implementing with xlib
+no GUI toolkits --> flexible
+
+client-init events: user inits ??? e.g. mouse click,move, keyboard events...
+
+':0' -- open display 
+
+
