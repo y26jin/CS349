@@ -36,4 +36,50 @@ What happens if the window minimize?
        minimize the time of XFlush
 
 Events Method
--ambiguity(continue from slide 27)
+-ambiguity
+-def: a struct that notify us sth occurs...
+ e.g. keyboard press, release, mouse click, ... in terms of structures in the code
+
+Role of X server
+-collect, put, order, decide, and dispatch events
+
+collecting events:
+-come from underlying hardware e.g. mouse?
+-come from higher level roles, e.g. window 
+
+Event rates: e.g. USB default rate is 125Hz
+syncopated: special events require accurate timing
+
+mouse button press/release are differentiated
+usually press doenst do anything
+on release, the event gets fired
+
+damage events
+-indicate sth in the windows needs changing
+-e.g. resiziing a window can fire an expose event can throlt CPU as the queue is filled with many pairs of (resize, repaint) events
+-two options regarding to expose events: ignore / timeout
+
+x server/client network load(need to pay attention of traffic)
+
+java GUI low level structure:
+-inheritance hirearchy
+-subclass is one event+additional info
+
+animation
+-repaint 30-60 times per second...
+-dont use more CPU than necessary
+
+double buffering
+-offscreen buffer, draw the buffer, then copy the buffer to the screen
+-user wont see anything until XCopyArea() fires
+-issues: window resize,but pixals are not
+	 memory management
+	 use smaller region to draw
+
+clipping
+-subregions to repaint
+-in java there could be performance problem when auto clipping
+    as it automatically repaints basically everything within the clipping region regardless of how complex the region is(say you have a beautiful sth there)
+
+
+
