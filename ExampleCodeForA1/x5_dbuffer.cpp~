@@ -213,7 +213,7 @@ void initX(int argc, char *argv[], XInfo &xinfo) {
 	XSelectInput(xinfo.display, xinfo.window, 
 		ButtonPressMask | KeyPressMask | PointerMotionMask 
 		| EnterWindowMask | LeaveWindowMask
-		| ResizeRedirectMask 
+		//| ResizeRedirectMask 
 		);
 
 	/*
@@ -359,9 +359,7 @@ void eventLoop(XInfo &xinfo) {
 					inside = 0;
 					break;
 				case ResizeRequest:
-				  cout<<"start resizing!"<<endl;
 					handleResize(xinfo, event);
-					cout<<"resize has been done!"<<endl;
 					break;
 			}
 		}

@@ -1,0 +1,24 @@
+CS349 16 Jan 2013
+
+two states of mind of users
+
+----------------
+(As last lecture did not cover many useful topics, I will continue from 16Jan on 21Jan)
+
+direct manipulation != multitouch interaction...
+
+interaction vs interface
+--dialog / vehicle of dialog
+
+instrumental interaction
+-----------------------
+
+instruments + objs
+
+example of WIMP activations:
+-> dialog box...
+
+instruments act on instruments
+-> examples -> toolbar -> dialog box
+
+

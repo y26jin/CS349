@@ -1,0 +1,23 @@
+Visual Design
+-------------
+
+advanced exam question?
+-> usng simplicity and consistency from cognetics and visual design, explain who adaptive interface are good/bad for and why
+
+->features vanish/show up not by our wishes(for dev)
+->good for novice they need instructions
+
+simplicity vs consistency :
+reduction in options offers simplicity
+alternation of the interface causes exceptions to fire in our preattentive systems
+
+Gestalt principles: perceptual organization or intermediate visual processing
+->happen below our consciousness
+
+23 Jan | 2D Graphics
+--------------------
+
+
+
+
+
